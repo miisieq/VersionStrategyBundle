@@ -3,6 +3,5 @@ services:
         class: Miisieq\VersionStrategyBundle\Asset\VersionStrategy\GulpBusterVersionStrategy
         arguments:
             - "%kernel.root_dir%/../busters.json"
-            - "%kernel.root_dir%"
             - "%%s?version=%%s"
         public: false

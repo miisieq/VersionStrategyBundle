@@ -17,26 +17,19 @@ class GulpBusterVersionStrategy implements VersionStrategyInterface
     private $format;
 
     /**
-     * @var string
-     */
-    private $kernelRootDir;
-
-    /**
      * @var array
      */
     private $hashes;
 
     /**
-     * GulpBusterVersionStrategy constructor
+     * GulpBusterVersionStrategy constructor.
      *
      * @param $manifestPath
-     * @param $kernelRootPath
      * @param null $format
      */
-    public function __construct($manifestPath, $kernelRootPath, $format = null)
+    public function __construct($manifestPath, $format = null)
     {
         $this->manifestPath = $manifestPath;
-        $this->kernelRootDir = $kernelRootPath;
         $this->format = $format ?: '%s?%s';
     }
 
