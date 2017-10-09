@@ -1,0 +1,22 @@
+{
+  "name": "miisieq/version-strategy-bundle",
+  "type": "symfony-bundle",
+  "description": "Asset version strategy for gulp-buster.",
+  "keywords": [
+    "gulp-buster",
+    "gulp",
+    "bundle",
+    "symfony",
+    "assetic"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Miisieq\\VersionStrategyBundle\\": ""
+    }
+  },
+  "require": {
+    "php": ">=5.3.9",
+    "symfony/asset": ">=2.7.20"
+  }
+}
